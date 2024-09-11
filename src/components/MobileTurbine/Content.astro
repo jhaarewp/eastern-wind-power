@@ -1,0 +1,68 @@
+---
+import { Image } from "astro:assets";
+import Turbine from '../../Images/home-mobile-turbine.png'
+---
+
+<section class="container">
+    <div class="content content-background">
+        <h1>Mobile Turbine</h1>
+        <Image class="turbine-image" src={Turbine} alt="Image of Mobile Turbine"/>
+        <h2>Mobile Turbine Unit</h2>
+        <p>Eastern Wind Power, Inc. has designed a mobile wind energy technology for disaster relief services, rural electrification micro-grid application, rural communications ground stations, and for military defense field operations. It would establish or feed into a local grid network, assisting in filling the capacity needs of a centralized grid for various base needs, or function as a stand-alone system for field and rural power needs.</p>
+        <p>We have created an efficient, quiet and reliable vertical axis wind turbine of commercial capacity, but of small enough scale to power a small community or key service within a community. Clean water and basic lighting are two direct ways of providing basic human comforts to areas unreachable by conventional power distribution systems.</p>
+        <p>Our turbine can be used to power deep well pumps to power cisterns throughout the day and night, creating a “head” to run a small community water system or irrigate a farm. There can be battery charging stations for charging motorcycle type batteries for home use allowing:  students to run lap tops; houses to run LED lights and communication equipment; rural farms to light structures and power equipment.</p>
+        <p>We have adapted our Sky Farm™ 50 kW vertical axis wind turbine to fit in, and assemble out of a 20’ ISO shipping container, using it as the turbine’s “foundation”.</p>
+        <ul>
+            <li>The unit is sized to be transported by ship and then by either a mid-sized tractor or helicopter.</li>
+            <li>The mobile unit can feed a field micro-grid with the power  as is required, be it 48 volt battery storage for reserve power or live time 220/480 Volt – 3 phase @ 60 or 50 Hz. feeds.</li>
+            <li>The unit can serve as a self-contained power station, including on-board battery power storage systems, communications centers, grid distribution nodes, and mobile battery charging station.</li>
+            <li>The turbine blades will be hinged at their connection joints and will open like a tripod, with the blades locking in the open rigid position. The turbine tower would be transported in the same container – being (3) 19’ sections designed for field assembly.</li>
+        </ul>
+        <p>The unit is simple to install in the field as the hydraulics are adapted from a typical fire truck design to lift the turbine in place at the height appropriate for its utility and security. The trailer will have retractable outriggers for stability on any slope or terrain, locking the system in-place, thus freeing up the delivery vehicle for other transport duties.</p>
+        <Image class="turbine-image" src={Turbine} alt="Diagram of a Mobile Turbine" />
+        <p>In cooperation with our charitable sister company, The Darwin Project, EWP is designing the power source for the Surgical Center in a Box project.</p>
+        <Image class="turbine-image" src={Turbine} alt="Mobile Turbine linked to a house"/>
+    </div>
+</section>
+
+<style>
+    .content {
+        margin-top: 35px;
+        margin-bottom: 90px;
+        padding: 35px 15px;
+
+        .turbine-image {
+            display: block;
+            margin: 0 auto 35px;
+            max-width: 350px;
+            width: 100%;
+            height: auto;
+        }
+
+        ul {
+            margin: 20px 0;
+
+            li {
+                margin-left: 18px;
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        @media (width >= 768px) {
+            h2 {
+                text-align: left;
+            }
+        }
+    }
+
+    @media (width >= 768px) {
+            .content {
+                padding: 35px 50px;
+            }
+        }
+</style>

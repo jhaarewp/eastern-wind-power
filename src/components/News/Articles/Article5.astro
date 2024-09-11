@@ -1,0 +1,47 @@
+---
+import { Image } from "astro:assets";
+import Siemens from '../../../Images/Siemens.jpg'
+import Siemens2 from '../../../Images/Siemens2.jpg'
+---
+<article class="content-background">
+    <div class="header">
+        <h2 class="title">Siemens Industry and Eastern Wind Power Joint Exhibit at AWEA 2012 National wind Power Conference</h2>
+        <p class="date">June 3-7 2012</p>
+    </div>
+    <div class="content">
+        <Image class="image" src={Siemens} alt="Exibit at Siemens Industry"/>
+        <p>Linda Haar – Eastern Wind Power, and Razvan Panati – Siemens Industry, setting up exhibit.</p>
+
+        <Image class="image" src={Siemens2} alt="Exibit at Siemens Industry"/>
+        <p>Andreas Hartinger – Siemens Industry and Jonathan Haar – Eastern Wind Power. Lucy, EWP’s mascot, joins the show.</p>
+
+        <p>Siemens Industry and Eastern Wind Power jointly exhibit Eastern Wind Power’s Sky Farm™ 50 kW VAWT and Siemens inverter system at the AWEA 2012 National Wind Power Conference in Atlanta Georgi
+        Siemens’ Drive Technologies Division developed this technology for their motion to grid distributed power generation and microgrid systems in collaboration with EWP’s prototype development of their 50 kW VAWT</p>
+    </div>
+</article>
+
+<style>
+    article {
+        margin: 35px 0;
+        padding: 25px;
+    }
+
+    .image {
+        display: block;
+        margin: 0 auto 20px;
+        
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 30px;
+
+        .title {
+            margin-bottom: 0;
+        }
+    }
+</style>

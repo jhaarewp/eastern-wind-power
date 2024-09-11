@@ -1,0 +1,66 @@
+---
+import Nav from '../LayoutComponents/Nav.astro'
+import { Image } from "astro:assets";
+import HeaderBG from "../../../src/Images/header-bg.png"
+
+let backgroundUrl = 'url(/src/Images/header-bg.png)'
+---
+
+<header>
+    <div class="header-container">
+        <!-- Image used as a background image for the div /> -->
+        <div class="header-text container">
+            <h1>Eastern Wind Power</h1>
+            <p class="under-title">Green Energy Research & Development Company</p>
+        </div>
+        <Nav/>
+    </div>
+</header>
+
+<style>
+
+
+    .header-container {
+        width: 100%;
+        height: 216px;
+        background-image: url('../../Images/new-header-bg.png');
+        background-position: center;
+        background-size: auto;
+        background-repeat: no-repeat;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: start;
+    }
+
+    .header-text {
+        margin: 0 auto;
+        padding-top: 110px;
+        padding-bottom: 8px;
+
+        h1, p {
+            color: white;
+            margin-bottom: 0;
+        }
+
+        h1 {
+            font-size: 35px;
+            text-align: left;
+        }
+
+        .under-title {
+            font-size: 13px;
+        }
+
+        @media (width >= 768px) {
+            .under-title {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+</style>
