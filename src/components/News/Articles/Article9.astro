@@ -40,7 +40,16 @@
     .image {
         display: block;
         margin: 0 auto 20px;
-        
+        width: 100%;
+        height: auto;
+    }
+
+    @media (width >= 768px) {
+        .image {
+            width: auto;
+            max-width: 800px;
+            height: auto;
+        }
     }
 
     .header {
@@ -54,5 +63,9 @@
         .title {
             margin-bottom: 0;
         }
+    }
+
+    p {
+        word-break: break-word;
     }
 </style>

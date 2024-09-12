@@ -8,7 +8,7 @@ import TurbineDiagram from '../../../images/mobile-turbine-concept-5-cropped_edi
         <p class="date">March 5, 2013</p>
     </div>
     <div class="content">
-        <Image class="turbine-image" src={TurbineDiagram} alt="Turbine Diagram"/>
+        <Image class="image" src={TurbineDiagram} alt="Turbine Diagram"/>
         
         <p>Eastern Wind Power, Inc. has designed a mobile wind energy technology for disaster relief services, rural electrification micro-grid application, rural communications ground stations, and for military defense field operations. It would establish or feed into a local grid network, assisting in filling the capacity needs of a centralized grid for various base needs, or function as a stand-alone system for field and rural power needs.</p>
 
@@ -45,12 +45,19 @@ import TurbineDiagram from '../../../images/mobile-turbine-concept-5-cropped_edi
         }
     }
 
-    .turbine-image {
+    .image {
         display: block;
-        margin: 0 auto 30px;
-        max-width: 750px;
+        margin: 0 auto 20px;
         width: 100%;
         height: auto;
+    }
+
+    @media (width >= 768px) {
+        .image {
+            width: auto;
+            max-width: 800px;
+            height: auto;
+        }
     }
 
     .header {
