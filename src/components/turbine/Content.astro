@@ -1,0 +1,77 @@
+---
+import { Image } from "astro:assets";
+import Turbine from '../../images/home-50kw-turbine.jpg'
+---
+
+<section class="container">
+    <div class="content content-background">
+        <h1>Eastern Wind Power's Sky Farm™ 50 kW Vertical Axis Wind Turbine</h1>
+        <Image class="turbine-image" src={Turbine} alt="Image of 50kw Turbine"/>
+        <p>Eastern Wind Power, Inc. has developed the Sky Farm™ 50 kW Vertical Axis Wind Turbine (VAWT) with the strength, stability and versatility to withstand accelerated winds when roof-mounted on high-rise buildings in  urban areas or pole mounted in open areas. We also provide a 30 kW electronics system with the same turbine.</p>
+        <p>The Sky Farm™ 50 kW (generator name-plate sizing of 55 kW):</p>
+        <ul>
+            <li>Starts up at the low speed of 4 m/sec (9 mph), and shuts down at 40m/sec (90 mph);</li>
+            <li>Each turbine generates approximately 45,000 kilowatt hours (kWh) of energy per year. (Calculations based on two-years of real-time wind data collected from the 300 foot high building in Cambridge, MA), and field testing;</li>
+            <li>The rotor is relatively small, with three vertical blades of 6 meters (20 feet) in height, and a diameter of 5 meters (16 feet);</li>
+            <li>Can be closely spaced, 16 feet apart, when pole mounted on our standard 54 foot hig high pole, or mounted on a roof surface creating a “Sky Farm” to maximize energy output; and is</li>
+            <li>Built Tough in America™ for a real 20-year life.</li>
+        </ul>
+        <p>Over the past four years our team of aeronautical, mechanical, electronic, and structural engineers has designed, built, and durability tested our full scale prototypes and production model. In August 2010 we erected the Sky Farm™50kW at the Martha’s Vineyard Airport in Edgartown , MA where the Airport staff has enthusiastically lent their time, space and support to our green energy project. The generator and inverter for our power system were developed by Siemens Industry, Inc. German engineers. Through a mutually beneficial  EWP/Siemens partnership, Siemens prototyped their small wind inverter with our turbine prototype.  In September 2011 the turbine was fully commissioned with grid connection to NSTAR, and is producing power for the Airport.We have successfully completed safety testing, and will enter  the Small Wind IEC 61400-2 certification process.</p>
+        <h2>Built Tough in America™</h2>
+        <p>When you purchase a Sky Farm™ 50 kW turbine you are purchasing high quality built to last at least 20 years in strong wind environments. Since 2010, the turbine has successfully withstood the test of two hurricanes, the Blizzard of 2013 and the full throttle wind test of a twin engine Saab turbo prop, sponsored by Colgan Air.</p>
+        <p>Our challenge was to make the turbine extremely strong to handle accelerated and turbulent winds, but light enough to be efficient. We also knew that the system needed to be smart to deal with the varying conditions. On the exterior, the turbine appears to be quite simple. But serious work went has been invested in achieving these goals, using carbon fiber technology for the blades manufactured in Bristol, RI, and stainless steel castings for critical strength components manufactured in Gorham, ME, the inverter/generator system/software built by Siemens in Atlanta, GA, and steel shaft and casings fabricated in Salem, MA. The NSK bearings with a 20 year life were designed and built in Japan with lifecycle simulation testing in Ann Arbor, MI.</p>
+        <h2>Applications</h2>
+        <p>Our umbrella market is Energy Islands:  islands or pockets of high energy cost; unpredictable service or no energy infrastructure; yet good wind potential.</p>
+        <ul>
+            <li>Ocean islands throughout the globe have extremely high electricity costs, unpredictable or inaccessible service; and constant strong wind, ideal for our pole mounted turbines.</li>
+            <li>High–rise roof mounted VAWTs provide the most efficient green energy in urban areas where there is the greatest demand and limited space.</li>
+            <li>Mobile Units (self-contained) for remote Off-Grid locations, particularly to set up a micro-grid for disaster relief applications, as for military base use where fuel is trucked in at premium cost with significant safety hazard.</li>
+            <li>Developing Countries: Isolated Communities with no energy infrastructure but great need for power to provide basic human needs such as drinking water, lighting and medical facilities.</li>
+            <li>Working farms and remote industrial sites in the US pay a premium for electricity and can become masters of their own energy future using efficient wind energy.</li>
+            <li>Renewable Energy Portfolio Standards: Turbines can be easily mounted to decommissioned or active power plant chimneys, which provide height and circular geometry favorable to accelerating wind, to help meet REPS requirements for green energy.</li>
+        </ul>
+        <h2>Why Vertical Axis Wind Turbines</h2>
+        <p>Our focus has been on Vertical Axis Wind Turbines since they have many advantages over horizontal bladed turbines for roof-top as well as for pole mounted applications. VAWTs are quiet, do not harm avian life, do not have gear boxes and their mechanical issues, and their low profile is more acceptable to community aesthetic considerations. Our standard 54 foot pole brings the total turbine eight to just 80 feet.  One of the major advantages of VAWTs is that they can be closely spaced (one diameter apart) conserving valuable land or roof space.</p>
+    </div>
+</section>
+
+<style>
+    .content {
+        margin-top: 35px;
+        margin-bottom: 90px;
+        padding: 35px 15px;
+
+        .turbine-image {
+            display: block;
+            margin: 0 auto 35px;
+            max-width: 350px;
+            width: 100%;
+            height: auto;
+        }
+
+        ul {
+            margin: 20px 0;
+
+            li {
+                margin-left: 18px;
+                font-size: 18px;
+            }
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        @media (width >= 768px) {
+            h2 {
+                text-align: left;
+            }
+        }
+    }
+
+    @media (width >= 768px) {
+            .content {
+                padding: 35px 50px;
+            }
+        }
+</style>

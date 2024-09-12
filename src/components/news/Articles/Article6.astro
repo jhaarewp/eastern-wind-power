@@ -1,0 +1,49 @@
+---
+import { Image } from "astro:assets";
+import CleanTech from '../../../images/clean-tech-open-logo.jpg'
+---
+<article class="content-background">
+    <div class="header">
+        <h2 class="title">Eastern Wind Power is selected as one of Cleantech Open’s 2012 Northeast Regional Semi-Finalists</h2>
+        <p class="date">June 12, 2012</p>
+    </div>
+    <div class="content">
+        <Image class="image" src={CleanTech} alt="Clean Tech logo"/>
+        <p>“The Cleantech Open runs the world’s largest cleantech accelerator. We provide entrepreneurs and technologists the resources needed to launch successful cleantech companies. Our mission is to find, fund and foster entrepreneurs with big ideas that address today’s most urgent energy, environmental and economic challenges.”</p>
+    </div>
+</article>
+
+<style>
+    article {
+        margin: 35px 0;
+        padding: 25px;
+    }
+
+    .image {
+        display: block;
+        margin: 0 auto 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    @media (width >= 768px) {
+        .image {
+            width: auto;
+            max-width: 800px;
+            height: auto;
+        }
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 30px;
+
+        .title {
+            margin-bottom: 0;
+        }
+    }
+</style>

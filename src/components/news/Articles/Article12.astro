@@ -1,0 +1,60 @@
+---
+import { Image } from "astro:assets";
+import TurbineAirfield from '../../../images/turbine-in-a-box.jpeg'
+---
+<article class="content-background">
+    <div class="header">
+        <h2 class="title">Eastern produces VAWT ‘turbine in a box’</h2>
+        <p class="date">January 31, 2014</p>
+    </div>
+    <div class="content">
+        <Image class="image" src={TurbineAirfield} alt="Clean Tech logo"/>
+        
+        <p>UNITED STATES: Eastern Wind Power hopes to offer its small vertical-axis wind turbine (VAWT) 'in a box' as soon as 2014.</p>
+
+        <p>The system can be transported by helicopter in a standard container to remote areas for use by the military or during a disaster. The 50kW turbine could then be pneumatically or mechanically erected for operation using the box as its base.</p>
+
+        <p>On a recent snowy autumn's day, a prototype Sky Farm turbine – which uses a Siemens inverter system – was operating at the airport on Martha's Vineyard island off Massachusetts.</p>
+
+        <p>The turbine has three carbon-fibre blades, stainless steel components and regenerative drive braking.</p>
+        
+        <p>Eastern claimed the turbine would be suitable for use above city skyscrapers. One issue that must still be solved, however, is how to prevent ice on the blades so the turbines are safe for pedestrians below.</p>
+
+        <p>Siemens, which does not make small wind turbines, said using its off-the-shelf components for distributed power held wider possibilities. It said the Sky Farm could be combined with battery storage or gas turbines in a hybrid.</p>
+    </div>
+</article>
+
+<style>
+    article {
+        margin: 35px 0;
+        padding: 25px;
+    }
+
+    .image {
+        display: block;
+        margin: 0 auto 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    @media (width >= 768px) {
+        .image {
+            width: auto;
+            max-width: 800px;
+            height: auto;
+        }
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 30px;
+
+        .title {
+            margin-bottom: 0;
+        }
+    }
+</style>

@@ -1,0 +1,74 @@
+---
+import { Image } from "astro:assets";
+import TurbineAirfield from '../../../images/turbine-in-field.jpg'
+---
+<article class="content-background">
+    <div class="header">
+        <h2 class="title">VAWT on the Vineyard: Small Wind Revisited</h2>
+        <p class="date">November 22, 2013</p>
+    </div>
+    <div class="content">
+        <p>There's a fairly robust market for small-scale distributed wind systems (SWT) Navigant Consulting projects global installations will grow from an around 85 MW in 2012 to 172 MW in 2018 with revenues topping $728 million, and $3.3 billion cumulatively from 2013-2018, especially due to growing popularity of community- and municipality-owned systems. Urban environments are another attractive market, packing a bunch of energy-producing machines on the corner of a high-rise roof.</p>
+
+        <p>Addressing this sector are two general types of wind turbine designs, horizontal-axis (HAWT) and vertical-axis (VAWT). Proponents of VAWTs point to benefits of working in slower wind speeds, ability to be packed closer together, and easier installation and maintenance — but VAWT's past is checkered due to unfulfilled performance claims and mechanical issues (and the industry's embrace of centralized megawatt-scale HAWT designs). Nonetheless VAWTs are still getting some attention, including several recent high-profile installations at Adobe and the NFL's Philadelphia Eagles stadium.</p>
+
+        <p>Last week I got a first-hand look at one startup company's VAWT product, which seeks to fill a market need for small-scale distributed power generation in both urban settings and remote and off-grid situations. Since 2010 it's been perched in a corner of the Martha's Vineyard airport (MVY), producing power.</p>
+
+        <p>Coming from planning and design backgrounds, Eastern Wind Power's Jonathan and Linda Haar wanted to see new distributed energy options for urban populated areas, but wanted something more robust to offer commercial-scale output vs. what they termed "vanity" 5-10 kW turbines. Ultimately they decided on a VAWT lift-phase design with an H-type rotor, but when building the prototype they realized they needed a specialized inverter. Meanwhile, Siemens' Drive Technologies division had been exploring how its systems to convert and connect kinetic energy into the grid could be applied at a smaller scale, particularly for small-scale wind and hydropower, explained Razvan Panaitescu, business development manager for distributed power generation and microgrids.</p>
+
+        <p>Putting the two together created EWP's 50-kW Sky Farm VAWT, shown below sitting at the airport. Here's what they tout as its key features:</p>
+
+        <p>– The blades and struts are made from a cross woven carbon fiber composite with internal reinforcement ribs, with critical connection points fabricated in high-strength stainless steel. (Those reinforcements were a recent design tweak, as were the struts visibly extended by several inches.) A hydrophobic material applied to the blade tips aims to to increase longevity and prevent icing; tests have been conducted atop the meteorologically formidable Mount Washington, and this winter EWP will start using a new and improved material from Harvard dubbed "SLIPS".</p>
+
+        <p>– Siemens is contributing the power generation and conversion components in what it calls a "motion-to-grid" package: a 55-kW generator and smart inverter with internal regenerative drive system, housed in a horse trailer next to the turbine (no previous equine tenants). Inverter output is 480 V, three-phase 60 Hz which they claim is "easily convertible" to 50 Hz and different output voltages. All the components are UL/CE listed. Siemens sees small wind, and small hydro, as perfect testbeds to show how off-the-shelf standard industrial equipment can convert and connect kinetic energy into the grid, at slower speeds and a smaller scale. There's no gearbox, and the braking system is pneumatic, both of which eliminate key wear/tear points. And the shaft bearings from NSK have been simulated for 1,000 hours of hurricane-force load and a 20-year sealed unit life.</p>
+
+        <p>– Theoretical models indicate a 36-38 percent efficiency, far better than a typical VAWT turbine of around 10-20 percent efficiency and comparable to the 30-40 percent of large-scale HAWT counterparts, according to Bo Tao, EWP's lead scientist. (His day job is at the Wentworth Institute of Technology in Boston.) The company says this VAWT has annual output of about 45,000 kWh based on what's been seen at the MVY airport in around 13-14 MPH wind speeds; that's also roughly what they've modeled using measurements atop a 300-ft building in a Boston wind environment averaging 8 meters/sec annual wind speeds. Cut-in wind speed is 3.6 m/sec, with operations up to an auto shutdown at 32 m/sec. (Fun fact: since the VAWT at MVY has sat basically at ground level for safety testing, they had to back up a turboprop plane and gun it to simulate high winds. Everything vanished from the site except the turbine which managed splendidly, they report.)</p>
+
+        <Image class="image" src={TurbineAirfield} alt="Clean Tech logo"/>
+        
+        <p>The EWP turbine has indeed been sending electricity to the island's NStar-operated grid, for which the airport gets a monthly check for $200 — though it'd be four times that amount if they self-consumed it, Panaitescu suggested.</p>
+
+        <p>Initial calculations from a wind mapping study of a handful of Boston high-rises suggests that 10 of the company's 50-kW Sky Farm turbines could offset 10 percent of the energy consumed by a typical 500,000 sq. ft high-rise. That could eliminate the need for a diesel generator, or provide more usable energy than a 10,000-sq. ft. solar PV array.</p>
+
+        <p>The company sees opportunities beyond high-rises: islands with constant strong winds and unpredictable/inaccessible service, farms and remote industrial sites. There's even potential for decommissioned or active power plant chimneys. The company also is exploring how to fit everything into a 20-foot shipping container for use in remote locations or to establish a microgrid, or in cases of disaster relief.</p>
+
+        <p>The company is talks with a couple of prospective pilot customers and hopes to have something up in the field during 2014, either on a high-rise building or up on a pole (EWP has designed its own 54-foot three-section tower). Martha's Vineyard airport itself has applied for a FAA grant for up to three more of the turbines. EWP also is at the point where they're ready to welcome a sizeable manufacturing partner, and most importantly a sizeable investor from the corporate world. The company claims it has been issued six U.S. patents and has applied for more in Europe and Canada.</p>
+
+        <p>Having focused initially on its VAWT safety testing, and now with some of those certifications in hand (strain gauge, load testing for blades and connectors, the Siemens drivetrain) the company is turning to performance verification, and over this winter they will be calculating the VAWT's power curve. That curve plus those few safety certifications should be enough to get a pilot project going, said Linda Haar, pointing out that regions and states and even cities vary in what proof of performance they require — New York requires certification, for example, while Boston buildings merely require a stamped engineering plan. Full small-wind certification might provide a broader comparison with other small-wind technologies, but the few offerings for small-wind certifications don't necessarily agree, only a handful have been thusly "certified," and the certifications themselves aren't specifically geared for VAWT designs. NREL has examined VAWTs in the past and they're looking into it more closely now, she pointed out.</p>
+    </div>
+</article>
+
+<style>
+    article {
+        margin: 35px 0;
+        padding: 25px;
+    }
+
+    .image {
+        display: block;
+        margin: 0 auto 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    @media (width >= 768px) {
+        .image {
+            width: auto;
+            max-width: 800px;
+            height: auto;
+        }
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 30px;
+
+        .title {
+            margin-bottom: 0;
+        }
+    }
+</style>
