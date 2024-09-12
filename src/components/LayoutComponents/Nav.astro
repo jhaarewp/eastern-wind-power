@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+// import { Image } from "astro:assets";
 import Hamburger from '../../images/mobile-menu-icon.svg'
 ---
 
@@ -34,12 +34,12 @@ import Hamburger from '../../images/mobile-menu-icon.svg'
     <div class="mobile-nav">
         <div class="mobile-menu-open">
             <p class="mobile-menu-open-text">Menu</p>
-            <Image class="mobile-menu-open-image" src={Hamburger} alt="Icon to open navigation menu"/>
+            <img class="mobile-menu-open-image" src={Hamburger.src} alt="Icon to open navigation menu" />
         </div>
         <nav class="mobile-links-container">
-            <div class="close-position">
+            <!-- <div class="close-position">
                 <a class="close">X</a>
-            </div>
+            </div> -->
             <div class="links">
                 <a class='mobile-link' href="/">Home</a>
                 <a class='mobile-link' href="/50kw-turbine">50kw Turbine</a>
@@ -151,11 +151,10 @@ import Hamburger from '../../images/mobile-menu-icon.svg'
         }
 
         .mobile-links-container {
-            /* height: 388px; */
             width: 100%;
             background-color: #F5F6F6;
             background-image: none;
-            gap: 0;
+            padding-top: 25px;
         }
 
         nav a {
