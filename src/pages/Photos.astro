@@ -1,13 +1,13 @@
 ---
+import { Image } from "astro:assets";
 import Layout from '../layouts/Layout.astro';
 import 'swiper/css/bundle';
-import { Image } from "astro:assets";
-import Slide1 from "../images/ImageSlide/slide-1-wind-turbine-summer-sky.jpg";
-import Slide2 from "../images/ImageSlide/slide-2-wind-turbine.jpg";
-import Slide3 from "../images/ImageSlide/slide-3-wind-turbine-blue-sky-view.jpg";
-import Slide4 from "../images/ImageSlide/slide-4-wind-turbine-blade-view.jpg";
-import Slide5 from "../images/ImageSlide/slide-5-wind-turbine-full-view.jpg";
-import Slide6 from "../images/ImageSlide/slide-6-wind-turbine-fin-view.jpg";
+import slide1 from "../images/ImageSlide/slide-1-wind-turbine-summer-sky.jpg";
+import slide2 from "../images/ImageSlide/slide-2-wind-turbine.jpg";
+import slide3 from "../images/ImageSlide/slide-3-wind-turbine-blue-sky-view.jpg";
+import slide4 from "../images/ImageSlide/slide-4-wind-turbine-blade-view.jpg";
+import slide5 from "../images/ImageSlide/slide-5-wind-turbine-full-view.jpg";
+import slide6 from "../images/ImageSlide/slide-6-wind-turbine-fin-view.jpg";
 ---
 
 <Layout title="Eastern Wind Power" description="Photos and Videos of wind turbines from Eastern Wind Power">
@@ -16,12 +16,12 @@ import Slide6 from "../images/ImageSlide/slide-6-wind-turbine-fin-view.jpg";
 			<div class="content content-background">
 				<div class="swiper">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide"><Image src={Slide1} alt="Wind Turbine" /></div>
-						<div class="swiper-slide"><Image src={Slide2} alt="Wind Turbine" /></div>
-						<div class="swiper-slide"><Image src={Slide3} alt="Wind Turbine" /></div>
-						<div class="swiper-slide"><Image src={Slide4} alt="Wind Turbine" /></div>
-						<div class="swiper-slide"><Image src={Slide5} alt="Wind Turbine" /></div>
-						<div class="swiper-slide"><Image src={Slide6} alt="Wind Turbine" /></div>
+						<div class="swiper-slide"><Image src={slide1} alt="Wind Turbine" /></div>
+						<div class="swiper-slide"><Image src={slide2} alt="Wind Turbine" /></div>
+						<div class="swiper-slide"><Image src={slide3} alt="Wind Turbine" /></div>
+						<div class="swiper-slide"><Image src={slide4} alt="Wind Turbine" /></div>
+						<div class="swiper-slide"><Image src={slide5} alt="Wind Turbine" /></div>
+						<div class="swiper-slide"><Image src={slide6} alt="Wind Turbine" /></div>
 					</div>
 
 					<div class="swiper-button-prev"></div>
