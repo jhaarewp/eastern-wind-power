@@ -1,5 +1,5 @@
 ---
-// import { Image } from "astro:assets";
+import { Image } from "astro:assets";
 import Layout from '../layouts/Layout.astro';
 import 'swiper/css/bundle';
 import slide1 from "../images/slide-1-wind-turbine-summer-sky.jpg";
@@ -16,12 +16,12 @@ import slide6 from "../images/slide-6-wind-turbine-fin-view.jpg";
 			<div class="content content-background">
 				<div class="swiper">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src={slide1.src} alt="Wind Turbine" width={800} /></div>
-						<div class="swiper-slide"><img src={slide2.src} alt="Wind Turbine" width={800} /></div>
-						<div class="swiper-slide"><img src={slide3.src} alt="Wind Turbine" width={800} /></div>
-						<div class="swiper-slide"><img src={slide4.src} alt="Wind Turbine" width={800} /></div>
-						<div class="swiper-slide"><img src={slide5.src} alt="Wind Turbine" width={800} /></div>
-						<div class="swiper-slide"><img src={slide6.src} alt="Wind Turbine" width={800} /></div>
+						<div class="swiper-slide"><Image src={slide1} alt="Wind Turbine" width={800} /></div>
+						<div class="swiper-slide"><Image src={slide2} alt="Wind Turbine" width={800} /></div>
+						<div class="swiper-slide"><Image src={slide3} alt="Wind Turbine" width={800} /></div>
+						<div class="swiper-slide"><Image src={slide4} alt="Wind Turbine" width={800} /></div>
+						<div class="swiper-slide"><Image src={slide5} alt="Wind Turbine" width={800} /></div>
+						<div class="swiper-slide"><Image src={slide6} alt="Wind Turbine" width={800} /></div>
 					</div>
 
 					<div class="swiper-button-prev"></div>
