@@ -8,30 +8,52 @@ import slide3 from "../images/slide-3-wind-turbine-blue-sky-view.jpg";
 import slide4 from "../images/slide-4-wind-turbine-blade-view.jpg";
 import slide5 from "../images/slide-5-wind-turbine-full-view.jpg";
 import slide6 from "../images/slide-6-wind-turbine-fin-view.jpg";
+import RightArrow from "../images/slideshow-chevron-right.svg";
+import LeftArrow from "../images/slideshow-chevron-left.svg"
 ---
 
 <Layout title="Eastern Wind Power" description="Photos and Videos of wind turbines from Eastern Wind Power">
 	<main>
 		<div class="container">
 			<div class="content content-background">
+				<h1>Eastern Wind Power's Photos/Videos</h1>
+				<h2>Photo Gallery</h2>
 				<div class="swiper">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide"><Image src={slide1} alt="Wind Turbine" width={800} /></div>
-						<div class="swiper-slide"><Image src={slide2} alt="Wind Turbine" width={800} /></div>
-						<div class="swiper-slide"><Image src={slide3} alt="Wind Turbine" width={800} /></div>
-						<div class="swiper-slide"><Image src={slide4} alt="Wind Turbine" width={800} /></div>
-						<div class="swiper-slide"><Image src={slide5} alt="Wind Turbine" width={800} /></div>
-						<div class="swiper-slide"><Image src={slide6} alt="Wind Turbine" width={800} /></div>
+						<div class="swiper-slide"><Image class="swiper-image" src={slide1} alt="Wind Turbine"/></div>
+						<div class="swiper-slide"><Image class="swiper-image" src={slide2} alt="Wind Turbine"/></div>
+						<div class="swiper-slide"><Image class="swiper-image" src={slide3} alt="Wind Turbine"/></div>
+						<div class="swiper-slide"><Image class="swiper-image" src={slide4} alt="Wind Turbine"/></div>
+						<div class="swiper-slide"><Image class="swiper-image" src={slide5} alt="Wind Turbine"/></div>
+						<div class="swiper-slide"><Image class="swiper-image" src={slide6} alt="Wind Turbine"/></div>
 					</div>
 
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"><Image class="arrow-left" src={LeftArrow} alt="Arrow pointing left" /></div>
+					<div class="swiper-button-next"><Image class="arrow-right" src={RightArrow} alt="Arrow pointing right" /></div>
+				</div>
+
+				<div class="video-content">
+					<h2>Videos</h2>
+					<!-- Video 1 -->
+					<h3>Eastern Wind Power General Information</h3>
+					<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/AE0AY3nslSY?si=6Lp_6c6ZmUFM8ywg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+					<!-- Video 2 -->
+					<h3>Eastern Wind Power 50kW Vertical Axis Wind Turbine</h3>
+					<div class="vimeo" style="padding:60.25% 0 0 0;position:relative;width:300px">
+						<iframe src="https://player.vimeo.com/video/155692232?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Eastern Wind Power 50kW Vertical Axis Wind Turbine January 2016"></iframe>
+					</div><script src="https://player.vimeo.com/api/player.js"></script>
+
+					<!-- Video 3 -->
+					<h3>Eastern Wind Power Sky Farm 50kW Wind Turbine Test</h3>
+					<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/g8pj-Dywl5A?si=KFhyK-j9LXYjh4CV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 				</div>
 
 				<script>
 					import Swiper from 'swiper/bundle';
 					const swiper = new Swiper('.swiper', {
 						loop: true,
+						autoHeight: true,
 						navigation: {
 							nextEl: '.swiper-button-next',
 							prevEl: '.swiper-button-prev',
@@ -44,9 +66,70 @@ import slide6 from "../images/slide-6-wind-turbine-fin-view.jpg";
 </Layout>
 
 <style>
+	.content {
+		padding: 35px 15px;
+		margin-top: 35px;
+		margin-bottom: 50px;
+
+		@media (width >= 768px) {
+			padding: 35px 50px;
+		}
+	}
+
 	.swiper {
 		width: 100%;
 		max-width: 800px;
 		margin: 0 auto;
+		margin-bottom: 90px;
+	}
+
+	.swiper-slide {
+		max-width: 800px !important;
+		width: 100% !important;
+		height: auto !important;
+
+		.swiper-image {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.swiper-button-next::after {
+		content: none;
+	}
+
+	.swiper-button-prev::after {
+		content: none;
+	}
+
+	.arrow-left {
+		margin-left: 10px;
+	}
+
+	.arrow-right {
+		margin-right: 10px;
+	}
+
+	.video-content {
+		h3 {
+			margin-bottom: 25px;
+		}
+	}
+
+	.video {
+		max-width: 560px;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	.video:last-child {
+		margin-bottom: 0px;
+	}
+
+	.vimeo {
+		max-width: 600px;
+		width: 100%;
+		height: auto;
+		margin-bottom: 40px;
 	}
 </style>
