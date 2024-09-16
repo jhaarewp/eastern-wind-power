@@ -5,7 +5,7 @@ import Nav from './Nav.astro';
 <header>
     <div class="header-container">
         <div class="header-text container">
-            <h1>Eastern Wind Power</h1>
+            <h1><a href="/">Eastern Wind Power</a></h1>
             <p class="under-title">Green Energy Research & Development Company</p>
         </div>
         <Nav/>
@@ -39,6 +39,11 @@ import Nav from './Nav.astro';
         h1 {
             font-size: 35px;
             text-align: left;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
         }
 
         .under-title {
